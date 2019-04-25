@@ -1,0 +1,46 @@
+.follow_block
+    position: relative
+    height: 380px
+    background-color: #000000
+    opacity: 0.9
+    margin-bottom: 100px
+    .follow_block_inside
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+    .follow_header
+        text-align: center
+        font-family: Raleway
+        font-size: 30px
+        font-weight: 700
+        color: #ffffff
+        span
+            color: #ff0036
+    &-content
+        display: flex
+        width: 470px
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+        .follow_content_item
+            cursor: pointer
+            
+            .follow_icon
+                margin-bottom: 40px
+                position: relative
+                height: 40px
+                img
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+@media (max-width: 600px)
+    .follow_block
+        &-content
+            width: 300px
+@media (max-width: 1000px)
+    .follow_block
+        margin-bottom: 25px
+    

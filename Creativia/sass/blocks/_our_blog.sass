@@ -1,0 +1,56 @@
+.our_blog
+    margin-top: 100px
+    padding-bottom: 100px
+    .content_item
+        display: flex
+        justify-content: space-around
+        align-items: center
+        padding-bottom: 50px
+        &-leftpart
+            position: relative
+            background: #56ca7f
+            width: 370px
+            height: 200px
+            opacity: 0.8
+            .blog_img1
+                position: absolute
+                bottom: 0
+                right: 0 
+        &-rightpart
+            flex-basis: 50%
+            .blog_content_header
+                color: #2e2e2e
+                font-family: "Raleway - Semi Bold"
+                font-size: 20px
+                font-weight: 400
+                line-height: 21px
+            .blog_button
+                background-color: #262626
+                width: 120px
+                height: 40px
+                cursor: pointer
+                color: #ffffff
+                font-family: Lato
+                font-size: 16px
+                font-weight: 400
+                text-transform: uppercase
+                border: none
+                &:hover
+                    transition: 0.3s
+                    background: red
+
+            .blog_content_text
+                color: #505050
+                font-family: Lato
+                font-size: 16px
+                font-weight: 400
+                line-height: 20px
+    .content_item-leftpart2
+        background: #24b0c9
+        opacity: 1
+@media (max-width: 1000px)
+    .content_item, .content_item2
+        flex-direction: column
+        text-align: center
+        margin: 0 auto
+        width: 70%

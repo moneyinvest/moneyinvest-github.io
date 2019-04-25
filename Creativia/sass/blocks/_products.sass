@@ -1,0 +1,180 @@
+.products
+    text-align: center
+    padding-bottom: 415px
+    &-main_content
+        margin-top: 170px
+        display: flex
+        justify-content: space-between
+        &-middle
+            position: relative
+            width: 440px
+            .phone_screen
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 0
+            .phone_romb
+                position: absolute
+                top: 100px
+                left: 50%
+                transform: translateX(-50%)
+                
+            .phone_panel
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: -60px
+            .phone_romb_bot
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 310px
+            .phone_camera
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: -35px
+            .products_button
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 420px
+                a
+                    background: #393939
+                a:hover
+                    transition: 0.3s
+                    background: red
+        &-left
+            .option
+                border: 1px solid #e7e7e7
+                display: flex
+                padding-right: 20px
+                justify-content: flex-end
+                p
+                    color: #262626
+                    font-family: Raleway
+                    font-size: 20px
+                    font-weight: 500
+                    text-transform: uppercase
+                .check_iconblock
+                    position: relative
+                    margin-left: 30px
+                    .check_shadow, .check_icon
+                        position: absolute
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%,-50%)
+        &-right
+            .option
+                display: flex
+                padding-left: 20px
+                justify-content: flex-start
+                border: 1px solid #e7e7e7
+                p
+                    color: #262626
+                    font-family: Raleway
+                    font-size: 20px
+                    font-weight: 500
+                    text-transform: uppercase
+                .check_iconblock
+                    position: relative
+                    margin-right: 30px
+                    .check_shadow, .check_icon
+                        position: absolute
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%,-50%)
+           
+    
+            
+                
+.products_underheader
+    color: #505050
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    line-height: 22px
+    span
+        color: red
+.products_header
+    font-family: Raleway
+    font-size: 30px
+    font-weight: 700
+    color: #505050
+    span
+        color: red
+@media (max-width: 1000px)
+    .products
+        padding-bottom: 50px
+        &-main_content
+            margin-top: 50px
+            flex-direction: column
+            &-right
+                order: 1
+                margin-bottom: 30px
+                .option
+                    padding: 0
+                    justify-items: flex-start
+                    .check_iconblock
+                        margin-left: 30px
+            &-left
+                order: 2
+                .option
+                    padding: 0
+                    flex-direction: row-reverse
+                    justify-items: flex-start
+                    .check_iconblock
+                        margin-right: 30px
+            &-middle
+                order: 3
+                
+                height: 600px
+                margin: auto
+                margin-top: 50px
+                .phone_screen
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: 50px
+                .phone_romb
+                    position: absolute
+                    top: 200px
+                    left: 50%
+                    transform: translateX(-50%)
+                    
+                .phone_panel
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: 0
+                .phone_romb_bot
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: 400px
+                .phone_camera
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: 25px
+                .products_button
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: 500px
+@media (max-width: 520px)
+    .products
+        &-main_content
+            &-left
+                .option
+                    p
+                        font-size: 13px
+            &-right
+                .option
+                    p
+                        font-size: 13px
+        
+            &-middle
+                height: 50px
+                display: none
+                    

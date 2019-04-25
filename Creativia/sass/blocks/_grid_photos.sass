@@ -1,0 +1,156 @@
+.grid_photos
+    display: grid
+    max-width: 1400px
+    grid-template-columns: 1fr 300px 1fr 255px 
+    margin: 0 auto
+    .item
+        height: 350px
+        display: flex
+        justify-content: end
+        align-items: center
+        position: relative
+        img 
+            position: absolute
+            right: 0   
+    
+            
+    &-item2
+        background: #f39943
+        
+    &-item3
+        background: #3782aa
+    &-item4
+        background: #ef5d88
+    &-item5
+        background: #f6f0e0
+.grid_photos2
+    display: grid
+    max-width: 1400px
+    grid-template-columns: 300px 1fr 265px 1fr
+    margin: 0 auto
+    &-item6 
+        background: #56cc82
+    &-item7
+        background: #95a5a5
+        
+    &-item8
+        background: #24b0c9
+    &-item9
+        background: #fa8562
+    
+    .item
+        height: 350px
+        
+        display: flex
+        justify-content: end
+        align-items: center
+        position: relative
+        img 
+            position: absolute
+            right: 0  
+.line_red
+    background: red
+    height: 1px
+    margin-top: 1px
+    margin-bottom: 100px
+.flex_photo_footer
+    max-width: 1400px
+    background: #262626
+    height: 110px
+    margin: 0 auto
+.flex_photo
+    max-width: 1400px
+    margin: 0 auto
+    &-item1
+        width: 100%
+        background: #262626
+        height: 273px
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        
+        &-header
+            color: #ffffff
+            font-family: Raleway
+            font-size: 30px
+            font-weight: 700
+        &-menu
+            display: flex
+            justify-content: center
+            color: #a4a4a4
+            font-size: 16px
+            font-weight: 700
+            line-height: 22px
+            text-transform: uppercase
+            p
+                margin-left: 20px  
+    
+@media (max-width: 1400px)
+    .grid_photos
+        grid-template-columns: 1fr 1fr 
+        .item
+            height: 300px
+            img 
+                width: 300px
+                height: 70%
+    .grid_photos2
+        grid-template-columns: 1fr 1fr 
+        .item
+            height: 300px
+            img 
+                width: 300px
+                height: 70%
+@media (max-width: 900px)
+     .grid_photos
+        grid-template-columns: 1fr 1fr
+        
+        .item
+            img 
+                width: 280px
+                height: 70%
+     .grid_photos2
+        grid-template-columns: 1fr 1fr
+        
+        .item
+            img 
+                width: 280px
+                height: 70%
+@media (max-width: 630px)
+    .grid_photos
+        grid-template-columns: 1fr 
+        .item
+            img 
+                width: 350px
+                height: 70%
+    
+    .grid_photos2
+        grid-template-columns: 1fr 
+        .item
+            img 
+                width: 350px
+                height: 70%
+    .flex_photo
+        &-item1
+            &-header
+                font-size: 20px
+            &-menu
+                p
+                    margin-left: 15px 
+                    font-size: 13px 
+
+        
+                
+                
+     
+        
+    
+                
+            
+        
+            
+            
+    
+

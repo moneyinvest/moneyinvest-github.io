@@ -1,0 +1,43 @@
+.line
+    width: 510px
+    margin: 0 auto
+    height: 1px
+    background: black
+    position: relative
+    margin-bottom: 70px
+    img 
+        position: absolute
+        top: -7px
+        left: 48%
+.adv_grid
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    
+    &-item
+        text-align: center
+        flex-basis: 200px
+        .adv_header
+            font-size: 20px
+            font-weight: 700
+            text-transform: uppercase
+            color: #262626
+        .adv_text
+            color: #262626
+    .adv_icon   
+        height: 80px
+        position: relative
+    
+        
+        &-ramka
+            position: absolute
+            left: 50% 
+            top: 0
+            transform: translateX(-50%)
+        &-photo
+            position: absolute
+            z-index: 3
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)

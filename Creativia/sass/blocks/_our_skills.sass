@@ -1,0 +1,45 @@
+.skills_content
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    max-width: 860px
+    &-item
+        position: relative
+        text-align: center
+        flex-basis: 200px
+        .skill_kolo
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translate(-50%,-50%)
+        .procent
+            padding-bottom: 20px
+            padding-top: 62px
+            color: #000000
+            font-family: Lato
+            font-size: 40px
+            font-weight: 300
+            span
+                color: #ff0036
+        .skill_nav
+            padding-top: 
+            color: #262626
+            font-size: 20px
+            font-weight: 700
+            text-transform: uppercase
+            
+        .skill_desc
+            color: #505050
+            font-family: Lato
+            font-size: 16px
+            font-weight: 400
+            line-height: 18px
+@media (max-width: 620px)
+    .skills_content
+        justify-content: center
+        flex-wrap: wrap
+        &-item
+            margin-right: 20px
+
+
+
